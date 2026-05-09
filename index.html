@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PDF SHPK</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>
+        :root { --primary: #2563eb; --bg: #f8fafc; --white: #ffffff; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); margin: 0; padding: 20px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; }
+        .container { width: 100%; max-width: 400px; text-align: center; }
+        
+        /* LOGO NE KRYE TE FAQES */
+        .logo-img { width: 100px; height: 100px; object-fit: contain; background: white; padding: 10px; border-radius: 20px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1); margin-bottom: 15px; }
+        
+        h1 { font-size: 1.8rem; margin: 0; color: #1e293b; }
+        p { font-size: 2rem; color: #64748b; margin-top: 5px; margin-bottom: 30px; }
+        .menu-grid { display: flex; flex-direction: column; gap: 15px; width: 100%; }
+        .menu-card { background: var(--white); border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit; box-shadow: 0 2px 5px rgba(0,0,0,0.03); border: 1px solid #e2e8f0; transition: 0.2s; }
+        .menu-card:active { transform: scale(0.98); background-color: #f1f5f9; }
+        .card-icon { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; }
+        .card-text { text-align: left; flex: 1; }
+        .card-title { font-size: 1.1rem; font-weight: 700; display: block; color: #1e293b; }
+        .card-desc { font-size: 0.8rem; color: #94a3b8; }
+        
+        .icon-hist { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+        .icon-plan { background: linear-gradient(135deg, #10b981, #059669); }
+        .icon-real { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+        .icon-opps { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        
+        .footer { margin-top: 40px; font-size: 0.75rem; color: #cbd5e1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-area">
+            <img src="logo.png" alt="PDF Logo" class="logo-img" onerror="this.style.display='none'; document.querySelector('.fa-chart-simple').style.display='inline-block'">
+            <i class="fa-solid fa-chart-simple" style="display:none; font-size: 3rem; color: #2563eb; background: white; padding: 20px; border-radius: 50%; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1); margin-bottom: 15px;"></i>
+            
+            <h1>PDF SHPK</h1>
+            <p>Sistemi i Menaxhimit</p>
+        </div>
+
+        <div class="menu-grid">
+            <a href="MOBILE_APP_PLUS.html" class="menu-card">
+                <div class="card-icon icon-hist"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <div class="card-text"><span class="card-title">Historiku</span><span class="card-desc">Analiza e shitjeve të kaluara</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#cbd5e1"></i>
+            </a>
+
+            <a href="PLANIFIKIMI_DETAJUAR_V8.html" class="menu-card">
+                <div class="card-icon icon-plan"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="card-text"><span class="card-title">Planifikimi</span><span class="card-desc">Vendosja e objektivave</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#cbd5e1"></i>
+            </a>
+            
+            <a href="REALIZIMI.html" class="menu-card">
+                <div class="card-icon icon-real"><i class="fa-solid fa-bars-progress"></i></div>
+                <div class="card-text"><span class="card-title">Realizimi</span><span class="card-desc">Monitorimi i muajit aktual</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#cbd5e1"></i>
+            </a>
+
+            <a href="MUNDESITE.html" class="menu-card">
+                <div class="card-icon icon-opps"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="card-text"><span class="card-title">Mundësitë</span><span class="card-desc">Ri-aktivizimi dhe Potenciali</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#cbd5e1"></i>
+            </a>
+        </div>
+
+        <div class="footer">&copy; 2026 PDF SHPK</div>
+    </div>
+</body>
+</html>
